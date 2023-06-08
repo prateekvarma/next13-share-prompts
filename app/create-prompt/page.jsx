@@ -1,3 +1,5 @@
+'use client';
+
 import Form from '@/components/Form';
 import { useState } from 'react';
 
@@ -8,17 +10,17 @@ const CreatePrompt = () => {
     tag: '',
   });
 
-  const createPrompt = async (e) => {
+  const createPrompt = async (e) => {};
 
-  }
-
-  return <Form 
-    type="create"
-    post={post}
-    setPost={setPost}
-    submitting={submitting}
-    handleSubmit={createPrompt}
-  />;
+  return (
+    <Form
+      type='create'
+      post={post}
+      setPost={setPost}
+      submitting={submitting}
+      handleSubmit={createPrompt}
+    />
+  );
 };
 
 export default CreatePrompt;
