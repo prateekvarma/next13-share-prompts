@@ -4,8 +4,6 @@ import { connectToDB } from '@utils/database';
 export const POST = async (req, res) => {
   const { userId, prompt, tag } = await req.json();
 
-  console.log('receieved at the api route: ', prompt);
-
   try {
     await connectToDB();
     const newPrompt = new Prompt({
